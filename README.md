@@ -1,2 +1,2 @@
 # extlibc
-an small c lib for some extended functions
+A small c lib for some extended functions
