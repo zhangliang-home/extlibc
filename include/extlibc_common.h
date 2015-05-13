@@ -14,4 +14,7 @@
 #define _unused(var) ((void)(var))
 #endif
 
+#include <stdlib.h>
+#include <stdint.h>
+
 #endif /* EXTLIBC_COMMON_H_ */

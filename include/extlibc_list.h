@@ -8,6 +8,8 @@
 #ifndef INCLUDE_EXTLIBC_LIST_H_
 #define INCLUDE_EXTLIBC_LIST_H_
 
+typedef struct __extlibc_list_s* extlibc_list_ptr_t;
 
+void extlibc_list_init(extlibc_list_ptr_t plist);
 
 #endif /* INCLUDE_EXTLIBC_LIST_H_ */
