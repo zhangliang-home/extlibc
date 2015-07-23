@@ -16,5 +16,10 @@ else
 	DEST_FOLDER := $(DEST_FOLDER_REL)
 endif
 
-TARGET_TEST:=$(PROJ_NAME)_test.exe
-TARGET_LIB:=$(PROJ_NAME).a
+ifeq ($(OS), WIN32)
+	TARGET_TEST:=$(PROJ_NAME)_test.exe
+	TARGET_LIB:=$(PROJ_NAME).lib
+else ifeq ($(OS), LINUX)
+	TARGET_TEST:=$(PROJ_NAME)_test
+	TARGET_LIB:=$(PROJ_NAME).a
+endif
